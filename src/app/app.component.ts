@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { EventEmitter } from 'events';
+import { FilsComponent } from './fils/fils.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'YahyaAngular';
-  couleur="green"
+  couleur="green";
+  couleursonpref;
+  ShowColorFils(value){
+    console.log(value);
+    this.couleursonpref=value;
+  }
 }

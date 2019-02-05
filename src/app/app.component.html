@@ -4,3 +4,5 @@
 </div> -->
 Je suis le Pére
 <app-fils [couleurson]="couleur"></app-fils>
+<p><app-fils (valueChange)="ShowColorFils($event)"></app-fils></p>
+Le couleur préféré du fils est: {{couleursonpref}}
