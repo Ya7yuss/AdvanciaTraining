@@ -1,0 +1,12 @@
+<p [ngClass]="{
+  jsk : isJsk,
+  tun : isTun
+}">
+  ng-class works!
+</p>
+
+
+<select #sel (change)="switch(sel)">
+    <option>JSK</option>
+    <option>TUN</option>
+</select>
