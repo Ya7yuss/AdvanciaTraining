@@ -13,6 +13,7 @@ import { ItemComponent } from './item/item.component';
 import { DetailComponent } from './detail/detail.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
+import { RainbowDirective } from './directives/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NgClassComponent } from './directives/ng-class/ng-class.component';
     ItemComponent,
     DetailComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,

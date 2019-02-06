@@ -1,7 +1,8 @@
 <p [ngClass]="{
   jsk : isJsk,
   tun : isTun
-}">
+}"
+*ngIf=bye>
   ng-class works!
 </p>
 
@@ -9,4 +10,10 @@
 <select #sel (change)="switch(sel)">
     <option>JSK</option>
     <option>TUN</option>
+    <option>byebye</option>
 </select>
+<br>
+<br>
+<br>
+
+<input type="text" class="text" appRainbow>

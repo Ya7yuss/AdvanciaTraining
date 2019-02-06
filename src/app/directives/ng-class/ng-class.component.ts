@@ -9,7 +9,9 @@ import { typeSourceSpan } from '@angular/compiler';
 export class NgClassComponent implements OnInit {
   isJsk=true;
   isTun=false;
-  constructor() { }
+  bye=true;
+  constructor() {
+   }
 
   ngOnInit() {
   }
@@ -17,12 +19,18 @@ export class NgClassComponent implements OnInit {
     if (sel.value == 'JSK'){
       this.isJsk = true
       this.isTun = false 
+      this.bye = true  
     }
 
     if (sel.value == 'TUN')
     {
       this.isTun = true  
       this.isJsk = false    
+      this.bye = true  
+    }
+    if (sel.value == 'byebye')
+    {
+      this.bye = false  
     }
   }
 }
