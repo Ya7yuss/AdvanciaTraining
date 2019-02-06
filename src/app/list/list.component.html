@@ -1,4 +1,6 @@
 <ol class="list-group-item" (click)="ShowDataToView()">
-  <app-item (valueChange)="ShowDataItem($event)" [personne]="personnes[0]"></app-item>
-  <app-item (valueChange)="ShowDataItem($event)" [personne]="personnes[1]"></app-item>
+  <app-item
+    *ngFor="let prs of personnes"
+    (valueChange)="ShowDataItem($event)" [personne]="prs"></app-item>
+  <!-- <app-item (valueChange)="ShowDataItem($event)" [personne]="personnes[1]"></app-item> -->
 </ol>
