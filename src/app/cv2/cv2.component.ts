@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Personne } from '../Model/Personne';
 
 @Component({
   selector: 'app-cv2',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cv2.component.css']
 })
 export class Cv2Component implements OnInit {
+  personneToDisplay: Personne;
 
+  DisplayData(value){
+    this.personneToDisplay=value;
+  }
   constructor() { }
 
   ngOnInit() {
