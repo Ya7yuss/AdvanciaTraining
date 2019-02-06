@@ -1,0 +1,22 @@
+<p [ngStyle]="
+{
+  'color':color,
+  'font-family':fontFamily,
+  'font-size':fontSize
+}">
+  ng-style works!
+</p>
+<input #myColor type="color" (change)="setColor(myColor)">
+<select #fontType (change)="setFont(fontType)">
+    <option>garamond</option>
+    <option>georgia</option>
+    <option>serif</option>
+</select>
+<select #size (change)="setSize(size)">
+    <option>10</option>
+    <option>12</option>
+    <option>14</option>
+    <option>16</option>
+    <option>18</option>
+    <option>20</option>
+</select>
