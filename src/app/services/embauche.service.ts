@@ -23,4 +23,14 @@ export class EmbaucheService {
   getEmbauches(){
     return this.embauches;
   }
+
+  deleteEmabuche(parm: Personne){
+    const index = this.embauches.indexOf(parm);
+    if (index<0){
+      alert ('index not found')
+    }
+    else {
+      this.embauches.splice(index,1);
+    }
+  }
 }

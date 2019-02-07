@@ -15,6 +15,10 @@ export class ListeEmbaucheComponent implements OnInit {
     this.embauches=this.service.getEmbauches();
   }
 
+  deleteEmbauche(parm: Personne){
+    this.service.deleteEmabuche(parm);
+  }
+
 
 
 }
