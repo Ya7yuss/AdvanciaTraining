@@ -1,0 +1,8 @@
+<div class="col-md-12">
+  <h1>Liste Todos</h1>
+  <ul class="list-group">
+  <li *ngFor="let todo of todos" class="list-group-item">
+    {{todo.day}} : {{todo.task}} <i class="fa fa-trash" (click)="deleteTodo(todo)"></i>
+  </li>
+</ul>
+</div>

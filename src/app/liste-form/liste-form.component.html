@@ -1,0 +1,4 @@
+<input #Day [(ngModel)] = 'day' type="form-group" class="form-control">
+<input #Task [(ngModel)] = 'task' type="form-group" class="form-control">
+<button [disabled]="(!day.length || task.length == 0)" 
+ type="button" class="btn btn-primary" (click)="addTodo()">Add Todo</button>

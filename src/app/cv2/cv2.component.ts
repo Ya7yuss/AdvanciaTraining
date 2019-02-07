@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personne } from '../Model/Personne';
+import { FirstService } from '../services/first.service';
 
 @Component({
   selector: 'app-cv2',
@@ -12,9 +13,10 @@ export class Cv2Component implements OnInit {
   DisplayData(value){
     this.personneToDisplay=value;
   }
-  constructor() { }
+  constructor(private firstservice: FirstService) { }
 
   ngOnInit() {
+    this.firstservice.sayHello();
   }
 
 }

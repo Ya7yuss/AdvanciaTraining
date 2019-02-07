@@ -14,6 +14,9 @@ import { DetailComponent } from './detail/detail.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { ListeTodoComponent } from './liste-todo/liste-todo.component';
+import { ListeFormComponent } from './liste-form/liste-form.component';
+import { ListeDisplayComponent } from './liste-display/liste-display.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { RainbowDirective } from './directives/rainbow.directive';
     DetailComponent,
     NgStyleComponent,
     NgClassComponent,
-    RainbowDirective
+    RainbowDirective,
+    ListeTodoComponent,
+    ListeFormComponent,
+    ListeDisplayComponent
   ],
   imports: [
     BrowserModule,
