@@ -1,0 +1,8 @@
+<div class="col-md-12">
+    <h4>Liste Embauche</h4>
+    <ul class="list-group">
+    <li *ngFor="let embauche of embauches" class="list-group-item">
+      <img width='100px' height="100px" src="assets/images/{{embauche?.path}}" alt="">  : {{embauche?.name}}  {{embauche?.firstname}}
+    </li>
+  </ul>
+  </div>

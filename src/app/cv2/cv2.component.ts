@@ -13,10 +13,10 @@ export class Cv2Component implements OnInit {
   DisplayData(value){
     this.personneToDisplay=value;
   }
-  constructor(private firstservice: FirstService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.firstservice.sayHello();
+
   }
 
 }

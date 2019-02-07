@@ -17,6 +17,7 @@ import { RainbowDirective } from './directives/rainbow.directive';
 import { ListeTodoComponent } from './liste-todo/liste-todo.component';
 import { ListeFormComponent } from './liste-form/liste-form.component';
 import { ListeDisplayComponent } from './liste-display/liste-display.component';
+import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ListeDisplayComponent } from './liste-display/liste-display.component';
     RainbowDirective,
     ListeTodoComponent,
     ListeFormComponent,
-    ListeDisplayComponent
+    ListeDisplayComponent,
+    ListeEmbaucheComponent
   ],
   imports: [
     BrowserModule,

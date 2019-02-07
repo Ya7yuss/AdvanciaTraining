@@ -8,6 +8,6 @@ export class FirstService {
   constructor() { }
 
   sayHello(){
-    alert('Hello');
+    //alert('Hello');
   }
 }

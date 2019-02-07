@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Personne } from '../Model/Personne';
+import { CvSerService } from '../services/cv-ser.service';
 
 @Component({
   selector: 'app-list',
@@ -8,25 +9,8 @@ import { Personne } from '../Model/Personne';
 })
 export class ListComponent implements OnInit {
   personnes: Personne [];
-  constructor() { 
-    this.personnes = [
-      new Personne(
-        1,
-        'ali',
-        'bensalah',
-        'BA',
-        '35',
-        'img1.png'
-      ),
-      new Personne(
-        2,
-        'yahya',
-        'amara',
-        'BA',
-        '35',
-        'img2.png'
-        )
-      ]
+  constructor(private service: CvSerService) {
+    this.personnes=this.service.getCv(); 
   }
  personneToView: Personne;
  @Output() valueChange=new EventEmitter();
@@ -35,7 +19,7 @@ export class ListComponent implements OnInit {
      this.personneToView
    )
  }
-  
+ 
   ShowDataItem(value){
     this.personneToView=value;
   }
