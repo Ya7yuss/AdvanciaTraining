@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['']">Home <span class="sr-only" routrLinkActive="active">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['cv']" routrLinkActive="active">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['ngClass']" routrLinkActive="active">ngClass</a>
+        </li>
+        <li class="nav-item">
+            <select #liste name="Links" id="" (change)="naviguer(liste.value)">
+              <option value="cv" class="va">cv</option>
+              <option value="ngClass" class="va">ngClass</option>
+              <option value="color" class="va">color</option>
+            </select>
+          </li>
+      </ul>
+    </div>
+  </nav>

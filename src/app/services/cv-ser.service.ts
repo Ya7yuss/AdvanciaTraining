@@ -30,4 +30,10 @@ export class CvSerService {
   getCv(){
     return this.personnes;
   }
+  getIndex(param: Personne){
+     return this.personnes.indexOf(param);
+  }
+  getPersonFromIndex(id){
+    return this.personnes[id];
+  }
 }

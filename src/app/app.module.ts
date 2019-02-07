@@ -18,6 +18,9 @@ import { ListeTodoComponent } from './liste-todo/liste-todo.component';
 import { ListeFormComponent } from './liste-form/liste-form.component';
 import { ListeDisplayComponent } from './liste-display/liste-display.component';
 import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.component';
+import { APP_ROUTING } from './app.routing';
+import { HeaderComponent } from './header/header.component';
+import { CvDetailComponent } from './cv-detail/cv-detail.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +39,14 @@ import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.componen
     ListeTodoComponent,
     ListeFormComponent,
     ListeDisplayComponent,
-    ListeEmbaucheComponent
+    ListeEmbaucheComponent,
+    HeaderComponent,
+    CvDetailComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule, 
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

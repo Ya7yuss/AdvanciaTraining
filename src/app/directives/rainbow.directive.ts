@@ -13,10 +13,10 @@ export class RainbowDirective {
 
 
   @HostListener('keypress') changeColor(){
-    this.color=this.tableCouleur[Math.floor(Math.random()*(this.tableCouleur.length-1)];
-    this.bdcolor=this.tableCouleur[Math.floor(Math.random()*(this.tableCouleur.length-1)];
-    // this.color="blue";
-    // this.bdcolor="pink";
+    // this.color=this.tableCouleur[Math.floor(Math.random()*(this.tableCouleur.length-1)];
+    // this.bdcolor=this.tableCouleur[Math.floor(Math.random()*(this.tableCouleur.length-1)];
+    this.color="blue";
+    this.bdcolor="pink";
   }
   constructor() { }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-color',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorComponent implements OnInit {
   couleur="green";
-  constructor() { }
-
+  constructor(private service:ActivatedRoute) { }
 
   ngOnInit() {
+    this.service.params.subscribe(
+      (params) => {
+        this.couleur=params['couleur'];
+        console.log(params['param']);
+      }
+    )
   }
 
 }
