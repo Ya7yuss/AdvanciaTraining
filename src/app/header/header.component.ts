@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
       link.push('blue');
       link.push('abc');
     }
+    console.log(link);
     this.route.navigate(link);
   }
 }

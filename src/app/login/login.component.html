@@ -1,0 +1,5 @@
+<form #formulaire="ngForm">
+  <input type="email" email required id="email" class="fadeIn second" name="email" ngModel>
+  <input type="password" required id="password" class="fadeIn third" name="login" ngModel>
+  <input type="submit"  value="Log In" (click)="login(formulaire)" [disabled]="!formulaire.valid">
+</form>

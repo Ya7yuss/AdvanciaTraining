@@ -5,6 +5,7 @@ import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.componen
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { ColorComponent } from './color/color.component';
 import { CvDetailComponent } from './cv-detail/cv-detail.component';
+import { LoginComponent } from './login/login.component';
 
 const ROUTING : Routes = [
   {path: 'cv', component: Cv2Component},
@@ -12,7 +13,8 @@ const ROUTING : Routes = [
   {path: 'ngClass', component: NgClassComponent},
   {path: 'color/:couleur/:param', component: ColorComponent},
   {path: 'color', component: ColorComponent},
-  {path: 'detail/:id', component: CvDetailComponent}
+  {path: 'detail/:id', component: CvDetailComponent},
+  {path: 'form', component: LoginComponent}
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(ROUTING);

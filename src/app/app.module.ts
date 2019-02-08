@@ -21,6 +21,7 @@ import { ListeEmbaucheComponent } from './liste-embauche/liste-embauche.componen
 import { APP_ROUTING } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { CvDetailComponent } from './cv-detail/cv-detail.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CvDetailComponent } from './cv-detail/cv-detail.component';
     ListeDisplayComponent,
     ListeEmbaucheComponent,
     HeaderComponent,
-    CvDetailComponent
+    CvDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,6 @@ export class CvDetailComponent implements OnInit {
         console.log(params);
         this.personne=this.cv.getPersonFromIndex(params.id-1);
         console.log(this.personne);
-      }
+      })
   }
-
 }
