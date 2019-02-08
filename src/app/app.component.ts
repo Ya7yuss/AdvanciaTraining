@@ -1,6 +1,7 @@
 import { Component, Output } from '@angular/core';
 import { EventEmitter } from 'events';
 import { FilsComponent } from './fils/fils.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',

@@ -10,7 +10,16 @@ import { CvSerService } from '../services/cv-ser.service';
 export class ListComponent implements OnInit {
   personnes: Personne [];
   constructor(private service: CvSerService) {
-    this.personnes=this.service.getCv(); 
+    this.service.getCv().subscribe(
+      (personnes) => {
+        this.personnes = personnes;
+        console.log(personnes);
+        return this.personnes;
+      },
+      (error) => {
+        alert ("Problème rencontré");
+      }
+    )
   }
  personneToView: Personne;
  @Output() valueChange=new EventEmitter();
