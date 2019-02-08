@@ -1,5 +1,6 @@
 <form #formulaire="ngForm">
-  <input type="email" email required id="email" class="fadeIn second" name="email" ngModel>
-  <input type="password" required id="password" class="fadeIn third" name="login" ngModel>
+  <input type="email" email required id="email" class="fadeIn second" name="email" #mail="ngModel" ngModel>
+  <input type="password" required id="password" class="fadeIn third" name="login" #pwd="ngModel" ngModel>
+  <div class="alert-danger" *ngIf="!pwd.valid && pwd.touched">Test</div>
   <input type="submit"  value="Log In" (click)="login(formulaire)" [disabled]="!formulaire.valid">
 </form>
